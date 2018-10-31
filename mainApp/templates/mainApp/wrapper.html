@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>kiql4 Home</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" type = "text/css">
+  </head>
+  <body style="background : #f9f9f9 " >
+    <div class="jumbotron">
+      <div class="container-fluid">
+        <h1 style="color : #f9f9f9" >BooksInMyLife <a href="/"><button  style="margin-left:65px;width:240px" type="button" class="btn btn-outline-light">Главная</button></a>
+        <a href="/blog"<button  style="margin-left:-5px;width:240px" type="button" class="btn btn-outline-light">Блог</button></a>
+        <a href="/book"<button style="margin-left:-5px;width:240px" type="button" class="btn btn-outline-light">Книги</button>
+        <a href="/contact"><button href="/contact" style="margin-left:6px;width:240px" type="button" class="btn btn-outline-light">Контакты</button></a></h1>
+
+      </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    {% block content2 %}
+    {% endblock %}
+
+
+    <hr>
+    &copyВсе права защищены 2018
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+{% for post in object_list %}
+  <div class="jumbotron" style="background:#f9f9f9;margin-left:14px;margin-top:17px" >
+  <div class="media">
+    <div class="media-body">
+      <a href="/book/{{post.id}}"><h2 class="mt-0" style="color:#191717" >{{post.title|safe}}</h2></a>
+      <h6 style="color:#423131">Дата: {{post.date|date:"Y-m-d"}}</h6>
+      <hr class="my-2">
+    </div>
+  </div>
+  </div>
+{% endfor %}
+{% endblock %}
